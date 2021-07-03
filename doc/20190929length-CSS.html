@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css中有这么么么多长度单位？ | 不言</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="learning the CSS - css中有这么么么多长度单位？">
+    
+    <link rel="preload" href="/assets/css/0.styles.f1a3602a.css" as="style"><link rel="preload" href="/assets/js/app.f7264c0f.js" as="script"><link rel="preload" href="/assets/js/18.85f5a0c0.js" as="script"><link rel="preload" href="/assets/js/7.74b98d96.js" as="script"><link rel="prefetch" href="/assets/js/10.e3e16a58.js"><link rel="prefetch" href="/assets/js/11.5bcdedc1.js"><link rel="prefetch" href="/assets/js/12.9b273120.js"><link rel="prefetch" href="/assets/js/13.43e63c72.js"><link rel="prefetch" href="/assets/js/14.979dab03.js"><link rel="prefetch" href="/assets/js/15.c13df58b.js"><link rel="prefetch" href="/assets/js/16.9e0dc116.js"><link rel="prefetch" href="/assets/js/17.da0862f9.js"><link rel="prefetch" href="/assets/js/19.d47f75e2.js"><link rel="prefetch" href="/assets/js/2.a12b68fe.js"><link rel="prefetch" href="/assets/js/20.11a804ef.js"><link rel="prefetch" href="/assets/js/21.a6d23204.js"><link rel="prefetch" href="/assets/js/22.38be9094.js"><link rel="prefetch" href="/assets/js/23.d8e71ae3.js"><link rel="prefetch" href="/assets/js/24.8c849120.js"><link rel="prefetch" href="/assets/js/25.98e56036.js"><link rel="prefetch" href="/assets/js/26.e067f62d.js"><link rel="prefetch" href="/assets/js/27.baa4b3aa.js"><link rel="prefetch" href="/assets/js/28.c7f05d3b.js"><link rel="prefetch" href="/assets/js/3.be1af5fe.js"><link rel="prefetch" href="/assets/js/4.c1ddadfc.js"><link rel="prefetch" href="/assets/js/5.32218b60.js"><link rel="prefetch" href="/assets/js/6.49cefbe9.js"><link rel="prefetch" href="/assets/js/8.7909c6ac.js"><link rel="prefetch" href="/assets/js/9.d7bdddf7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f1a3602a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><section id="global-layout" data-v-98a81704><header class="header" data-v-72e95531 data-v-98a81704><div class="header-navbar" data-v-72e95531><div class="flex-xbc main header-nav" data-v-72e95531><div class="nav-link" data-v-72e95531><a href="/" class="inblock link-logo router-link-active" data-v-72e95531><img data-src="/logo.png" loading="lazy" alt="logo" class="logo-img lazy" data-v-72e95531></a> <nav class="link-list" data-v-72e95531><a href="/" class="list-item router-link-active" data-v-72e95531>主页</a><a href="/posts/" class="list-item" data-v-72e95531>帖子</a><a href="/doc/" class="list-item router-link-active" data-v-72e95531>文章</a><a href="/tag/" class="list-item" data-v-72e95531>标签</a><a href="/category/" class="list-item" data-v-72e95531>分类</a><a href="/about/" class="list-item" data-v-72e95531>关于我</a></nav></div> <div class="search-box" data-v-72e95531><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div> </header> <!----> <section class="page" data-v-98a81704 data-v-98a81704><section class="info" style="background-image:url(https://picsum.photos/536/354?random&amp;date=2019-09-29);" data-v-238ac83b><article class="main info-content" data-v-9bdab2c6 data-v-238ac83b><div class="content-header" data-v-9bdab2c6><h1 class="header-title" data-v-9bdab2c6>css中有这么么么多长度单位？</h1></div> <div class="flex-wcc content-tag" data-v-9bdab2c6><div class="inblock tag-list" data-v-9bdab2c6><a href="/category/web前端/" class="tag-text" data-v-9bdab2c6>web前端
+      </a></div> <span class="tag-space" data-v-9bdab2c6>/</span> <div class="inblock tag-list" data-v-9bdab2c6><a href="/tag/css/" class="tag-text" data-v-9bdab2c6>css
+      </a></div></div> <div class="content content__default" data-v-9bdab2c6><p>wtf？vmin是什么东西~？</p> <p>emmm~下面都是瞎几把写的,我需要猛戳这个MDN链接
+https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Values_and_units</p> <p>###常见绝对单位
+######px
+在我的认识里面这是一个远古单位，绝对常量，个人比较喜欢用来设置字体大小等</p> <p>###常见相对单位
+重点是相对，你首先得需要一个参照物，比如父元素字体大小，窗口视图宽度等
+######em
+元素的font-size是相对于父元素父元素父元素的字体大小，然而他的其他元素使用的是自身的字体大小，所以一定得明白本身的字体大小是什么
+######rem
+这是我比较喜欢的单位，r代表的是root,rem类似于em，不同就在这个r上面， rem相对与根节点root的字体大小。
+######vh/vw
+这也是比较常用的单位
+v---视图(view),vh视图高度，vw视图宽度，相对视图，就是相对与你能看到的高度宽度，如100vh--100%视图高度，50vh一半高度。有点特x的抽象。
+#####vmin/vmax
+个人认为这是vh/vw的衍生单位，指的是视图的最小和最大尺寸的<strong>1%</strong>。
+比如视图高100px，宽50px，那么1vmin = 0.5px，1vmax = 1px</p> <p>想要做自适应，我觉得还是得了解这些单位，好比虚竹有了北冥神功才会那么快就学会天山六阳掌、天山折梅手~~才会是天龙里面最溜的那个渣男，呸不对，反正掌门是天龙里面最厉害的！！！！！！！！！！！！！！！！！！！！！！！！！！</p></div> <div class="content-time" data-v-9bdab2c6><time datetime="2019 M09 29" class="time-text" data-v-9bdab2c6>创建时间: 2019 M09 29
+    </time> <time datetime="2021 M03 3" class="time-text" data-v-9bdab2c6>最近更新: 2021 M03 3
+    </time></div></article> <section class="main info-content" style="padding-top:1rem;margin-top:2rem;" data-v-453e7403 data-v-238ac83b><div style="padding: 0 1rem 0 1rem" data-v-453e7403><span data-flag-title="Your Article Title" class="leancloud-visitors" data-v-453e7403><em class="post-meta-item-text" data-v-453e7403>阅读量： </em> <i class="leancloud-visitors-count" data-v-453e7403></i></span></div> <h3 style="padding: 1rem 1rem 0 1rem" data-v-453e7403><a href="javascript:;" data-v-453e7403></a>
+      评 论：
+  </h3> <div id="vcomments" style="padding: 1rem 1rem 0 1rem" data-v-453e7403></div></section> <section class="flex-xb main info-nav" data-v-203269c1 data-v-238ac83b><a href="/doc/20191002Vertically-centered.html" class="flex-xb nav-item" data-v-203269c1><div class="flex-xcc item-img" data-v-203269c1><img data-src="https://picsum.photos/536/354?random&amp;date=2019-10-02" loading="lazy" alt="CSS垂直居中" class="img lazy" data-v-203269c1></div> <article class="flex-ysc item-content" data-v-203269c1><h2 class="content-title" data-v-203269c1>CSS垂直居中</h2> <div class="content" data-v-203269c1><p>源自《css揭秘》
+在CSS中对元素进行水平居中非常的简单：如果是一个行内元素，就对他的父元素应用'text-align:center',如果是一个块级元素，就对他自身使用'margin:auto',然而对一个元素进行垂直居中就不是那么简单了。</p>
+</div></article></a> <a href="/doc/20190928js-this.html" class="flex-xb nav-item" data-v-203269c1><div class="flex-xcc item-img" data-v-203269c1><img data-src="https://picsum.photos/536/354?random&amp;date=2019-09-28" loading="lazy" alt="js中的this" class="img lazy" data-v-203269c1></div> <article class="flex-ysc item-content" data-v-203269c1><h2 class="content-title" data-v-203269c1>js中的this</h2> <div class="content" data-v-203269c1><h2 id="javascript中的this"><a class="header-anchor" href="#javascript中的this">#</a> javascript中的this</h2>
+<p>javascript中的this与java中的this有点不同。</p>
+</div></article></a></section></section></section> <footer class="footer" data-v-8dceedee data-v-98a81704><nav class="link-list" data-v-8dceedee><a href="https://github.com/ybuyan" target="_blank" rel="noopener noreferrer" class="list-item" data-v-8dceedee>Github</a></nav> <a href="/" class="copyright router-link-active" data-v-8dceedee>不言 © 2021</a></footer></section><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.f7264c0f.js" defer></script><script src="/assets/js/18.85f5a0c0.js" defer></script><script src="/assets/js/7.74b98d96.js" defer></script>
+  </body>
+</html>
